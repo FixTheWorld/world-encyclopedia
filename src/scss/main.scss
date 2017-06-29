@@ -1,0 +1,33 @@
+html,body,#root,.cj-main{
+  height: 100%;
+  width:100%;
+}
+.cj-main{
+  display: flex;
+  flex-direction: column;
+  background:linear-gradient(to bottom right,#280046, #6c03bd);
+  color:#fff;
+}
+.cj-content{
+  width: 100%;
+  flex: 1;
+  padding:1rem;
+  position: relative;
+}
+.cj-header{
+  padding:5px;
+}
+
+//
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+::-webkit-scrollbar-button {
+  background: #ddd;
+}
+::-webkit-scrollbar-track-piece {
+  background: #fff;
+}
+::-webkit-scrollbar-thumb {
+  background: #eee;
+}
