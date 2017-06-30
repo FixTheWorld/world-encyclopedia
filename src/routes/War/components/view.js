@@ -10,7 +10,8 @@ class Home extends Component{
         return (
             <div className="cj-main">
                 <article className="cj-content container">
-                    s
+                    <img className="cj-bg" src={require("../../../assets/img/bg.png")} />
+                    <div className="cj-bg2"> </div>
                 </article>
                 <Footer/>
             </div>
