@@ -2,8 +2,9 @@
  * Created by changjin.zhang on 6/19/2017.
  */
 import {combineReducers} from "redux";
+import locationReducer from './location';
 function makeRootReducer(asyReducers){
-    return combineReducers({mainReducer,...asyReducers});
+    return combineReducers({locationReducer,...asyReducers});
 }
 export function injectReducer(store,{key,reducer}){
     store.asyncReducers[key]=reducer;

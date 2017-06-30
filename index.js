@@ -4,7 +4,8 @@
 import React,{Component} from "react";
 import {render} from "react-dom";
 import {Provider} from 'react-redux';
-import {Router,browserHistory} from 'react-router';
+import {Router} from 'react-router';
+import browserHistory from './src/routes/history';
 import mainRoute from './src/routes/mainRoute';
 require('es6-promise').polyfill();
 require('isomorphic-fetch');

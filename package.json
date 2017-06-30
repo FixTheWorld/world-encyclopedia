@@ -4,14 +4,14 @@
   "private": true,
   "scripts": {
     "clean": "rimraf docs",
-    "start":"npm run devServer",
-    "devServer": "webpack-dev-server --config config/webpack.config.js --progress --compress",
+    "start": "webpack-dev-server --config config/webpack.config.js --progress --compress",
     "compile": "npm run clean&&set NODE_ENV=production&&webpack --config config/webpack.config.js --progress"
   },
   "dependencies": {
     "babel-polyfill": "^6.16.0",
     "debug": "^2.6.8",
     "es6-promise": "^4.1.0",
+    "history": "^3.2.1",
     "isomorphic-fetch": "^2.2.1",
     "leancloud-storage": "^3.0.1",
     "mongoose": "^4.10.5",

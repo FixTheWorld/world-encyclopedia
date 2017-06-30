@@ -67,7 +67,94 @@ html, body, #root, .cj-main {
   transform: rotate(180deg); }
 
 .cj-bg2 {
-  background-image: url(images/bg2.png);
+  background-image: url(/world-encyclopedia/images/bg2.png);
+  background-position: 100% 270%;
+  background-size: 100% 95%;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 1rem;
+  width: 10rem;
+  height: 95%; }
+
+.cj-btm-icon {
+  font-size: 2.3rem; }
+
+.cj-nav-text {
+  font-size: 1.4rem; }
+
+.test {
+  color: red; }
+html, body, #root, .cj-main {
+  height: 100%;
+  width: 100%; }
+
+.cj-main {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  background: linear-gradient(to bottom right, #280046, #6c03bd);
+  color: #fff; }
+
+.cj-content {
+  width: 100%;
+  -ms-flex: 1;
+      flex: 1;
+  padding: 1rem;
+  position: relative; }
+
+.cj-header {
+  padding: 5px; }
+
+::-webkit-scrollbar {
+  width: 0.5rem; }
+
+::-webkit-scrollbar-button {
+  background: #ddd; }
+
+::-webkit-scrollbar-track-piece {
+  background: #fff; }
+
+::-webkit-scrollbar-thumb {
+  background: #eee; }
+
+.cj-footer {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 100%;
+  border-top: solid 1px #dedede; }
+
+.cj-btm-nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 5rem;
+  max-width: 768px;
+  text-align: center;
+  margin: 0 auto; }
+  .cj-btm-nav li {
+    -ms-flex: 1;
+        flex: 1;
+    list-style: none; }
+
+.cj-icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  overflow: hidden; }
+
+.cj-bg {
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  width: 10rem;
+  height: 20rem;
+  transform: rotate(180deg); }
+
+.cj-bg2 {
+  background-image: url(/world-encyclopedia/images/bg2.png);
   background-position: 100% 270%;
   background-size: 100% 95%;
   background-repeat: no-repeat;

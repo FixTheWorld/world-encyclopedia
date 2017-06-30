@@ -9,15 +9,9 @@ const SpriteSmithPlugin = require('webpack-spritesmith');
 const prefix=require('autoprefixer');
 const config=require('./config');
 const env=config.env;
-const hotMiddlewareScript = 'webpack-hot-middleware/client?reload=true';
+const entry=path.resolve('', "./index.js");
+const publicPath="/world-encyclopedia/";
 
-let entry;
-//判断当前运行的脚本名称，如果是使用webpack-dev-server的脚本则不加入中间件
-if(config.env==='production'||process.env.npm_lifecycle_event===config.devScriptName){
-    entry=path.resolve('', "./index.js");
-}else{
-    entry=[path.resolve('', "./index.js"),hotMiddlewareScript];
-}
 let webpackConfig= {
     entry: {
         "js/app":entry,
@@ -31,7 +25,7 @@ let webpackConfig= {
     output: {
         filename:"[name].[hash].js",
         path: path.resolve('', './docs'),
-        publicPath:'',
+        publicPath:publicPath,
         chunkFilename:"js/[name].[hash].js"//按需加载的js文件的路径和后缀名
     },
     module:{
