@@ -66,6 +66,21 @@ ul {
       flex-shrink: 0;
   width: 100%;
   border-top: solid 1px #dedede; }
+  .cj-footer .cj-btm-nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    height: 5rem;
+    max-width: 768px;
+    text-align: center;
+    margin: 0 auto; }
+    .cj-footer .cj-btm-nav li {
+      -ms-flex: 1;
+          flex: 1;
+      list-style: none; }
+    .cj-footer .cj-btm-nav .cj-btm-icon {
+      font-size: 2.3rem; }
 
 ::-webkit-scrollbar {
   width: 0.5rem; }
@@ -79,50 +94,36 @@ ul {
 ::-webkit-scrollbar-thumb {
   background: #eee; }
 
-.cj-content {
+.cj-home.cj-content {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center; }
 
-.cj-search {
+.cj-home .cj-search {
   padding: 0;
   margin-bottom: 1rem; }
 
-.cj-btm-nav {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  height: 5rem;
-  max-width: 768px;
-  text-align: center;
-  margin: 0 auto; }
-  .cj-btm-nav li {
-    -ms-flex: 1;
-        flex: 1;
-    list-style: none; }
-
-.cj-icon {
+.cj-home .cj-icon {
   width: 100%;
   height: 100%;
   border-radius: 50%;
   overflow: hidden;
   transition: all 1s ease; }
 
-.cj-icon-xs {
+.cj-home .cj-icon-xs {
   width: 50%;
   height: 50%; }
 
-.cj-icon-sm {
+.cj-home .cj-icon-sm {
   width: 60%;
   height: 60%; }
 
-.cj-icon-md {
+.cj-home .cj-icon-md {
   width: 80%;
   height: 80%; }
 
-.cj-menu-cont {
+.cj-home .cj-menu-cont {
   padding: 0;
   display: -ms-flexbox;
   display: flex;
@@ -130,7 +131,7 @@ ul {
       justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  .cj-menu-cont li {
+  .cj-home .cj-menu-cont li {
     display: -ms-flexbox;
     display: flex;
     -ms-flex: 1;
@@ -140,16 +141,16 @@ ul {
     margin: 1%;
     border: solid 1px;
     border-radius: 3px; }
-    .cj-menu-cont li .cj-menu-icon {
+    .cj-home .cj-menu-cont li .cj-menu-icon {
       font-size: 4rem; }
-    .cj-menu-cont li .cj-menu-text {
+    .cj-home .cj-menu-cont li .cj-menu-text {
       font-size: 1.5rem; }
-    .cj-menu-cont li .cj-menu-left {
+    .cj-home .cj-menu-cont li .cj-menu-left {
       -ms-flex-negative: 0;
           flex-shrink: 0;
       padding: 0.3rem;
       text-align: center; }
-    .cj-menu-cont li .cj-menu-right {
+    .cj-home .cj-menu-cont li .cj-menu-right {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-align: center;
@@ -158,15 +159,15 @@ ul {
           flex: 1;
       padding: 0.3rem;
       border-left: solid 1px; }
-  .cj-menu-cont li:nth-child(2n+1) {
+  .cj-home .cj-menu-cont li:nth-child(2n+1) {
     margin-left: 0; }
-  .cj-menu-cont li:nth-child(2n) {
+  .cj-home .cj-menu-cont li:nth-child(2n) {
     margin-right: 0; }
 
-.cj-rotate {
+.cj-home .cj-rotate {
   transform: rotate(360deg); }
 
-.cj-bg {
+.cj-home .cj-bg {
   position: absolute;
   top: 0.5rem;
   left: 0;
@@ -174,7 +175,7 @@ ul {
   height: 20rem;
   transform: rotate(180deg); }
 
-.cj-bg2 {
+.cj-home .cj-bg2 {
   background-image: url(/world-encyclopedia/images/bg2.png);
   background-position: 100% 270%;
   background-size: 100% 95%;
@@ -185,7 +186,7 @@ ul {
   width: 10rem;
   height: 95%; }
 
-.cj-row {
+.cj-home .cj-row {
   height: 33.333%;
   display: -ms-flexbox;
   display: flex;
@@ -195,15 +196,9 @@ ul {
       justify-content: center;
   text-align: center; }
 
-.cj-btm-icon {
-  font-size: 2.3rem; }
-
-.cj-nav-text {
+.cj-home .cj-nav-text {
   font-size: 1.4rem;
   line-height: 1; }
-
-.test {
-  color: red; }
 html, body, #root, .cj-main {
   height: 100%;
   width: 100%; }
@@ -272,6 +267,21 @@ ul {
       flex-shrink: 0;
   width: 100%;
   border-top: solid 1px #dedede; }
+  .cj-footer .cj-btm-nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    height: 5rem;
+    max-width: 768px;
+    text-align: center;
+    margin: 0 auto; }
+    .cj-footer .cj-btm-nav li {
+      -ms-flex: 1;
+          flex: 1;
+      list-style: none; }
+    .cj-footer .cj-btm-nav .cj-btm-icon {
+      font-size: 2.3rem; }
 
 ::-webkit-scrollbar {
   width: 0.5rem; }
@@ -285,33 +295,7 @@ ul {
 ::-webkit-scrollbar-thumb {
   background: #eee; }
 
-.cj-footer {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  width: 100%;
-  border-top: solid 1px #dedede; }
-
-.cj-btm-nav {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  height: 5rem;
-  max-width: 768px;
-  text-align: center;
-  margin: 0 auto; }
-  .cj-btm-nav li {
-    -ms-flex: 1;
-        flex: 1;
-    list-style: none; }
-
-.cj-icon {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  overflow: hidden; }
-
-.cj-bg {
+.cj-war .cj-bg {
   position: absolute;
   top: 0.5rem;
   left: 0;
@@ -319,7 +303,7 @@ ul {
   height: 20rem;
   transform: rotate(180deg); }
 
-.cj-bg2 {
+.cj-war .cj-bg2 {
   background-image: url(/world-encyclopedia/images/bg2.png);
   background-position: 100% 270%;
   background-size: 100% 95%;
@@ -329,15 +313,6 @@ ul {
   right: 1rem;
   width: 10rem;
   height: 95%; }
-
-.cj-btm-icon {
-  font-size: 2.3rem; }
-
-.cj-nav-text {
-  font-size: 1.4rem; }
-
-.test {
-  color: red; }
 html, body, #root, .cj-main {
   height: 100%;
   width: 100%; }
@@ -406,6 +381,21 @@ ul {
       flex-shrink: 0;
   width: 100%;
   border-top: solid 1px #dedede; }
+  .cj-footer .cj-btm-nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    height: 5rem;
+    max-width: 768px;
+    text-align: center;
+    margin: 0 auto; }
+    .cj-footer .cj-btm-nav li {
+      -ms-flex: 1;
+          flex: 1;
+      list-style: none; }
+    .cj-footer .cj-btm-nav .cj-btm-icon {
+      font-size: 2.3rem; }
 
 ::-webkit-scrollbar {
   width: 0.5rem; }
@@ -419,14 +409,14 @@ ul {
 ::-webkit-scrollbar-thumb {
   background: #eee; }
 
-.cj-content {
+.cj-login.cj-content {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   text-align: center; }
 
-.cj-logo {
+.cj-login .cj-logo {
   margin-bottom: 2rem;
   display: -ms-flexbox;
   display: flex;
@@ -434,11 +424,11 @@ ul {
       justify-content: center;
   height: 7rem;
   font-size: 7rem; }
-  .cj-logo .cj-icon {
+  .cj-login .cj-logo .cj-icon {
     width: 7rem;
     height: 7rem; }
 
-.cj-btn {
+.cj-login .cj-btn {
   width: 100%; }
 
 @keyframes login-animate {
@@ -449,5 +439,5 @@ ul {
   100% {
     transform: rotate(360deg); } }
 
-.cj-rotate {
+.cj-login .cj-rotate {
   animation: login-animate 4s infinite; }
