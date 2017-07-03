@@ -13,6 +13,40 @@ ul {
   background: linear-gradient(to bottom right, #0c0115, #9611fd);
   color: #fff; }
 
+.cj-dialog {
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .cj-dialog .modal-dialog {
+    width: 80%; }
+
+@media screen and (min-width: 768px) {
+  .cj-main {
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse; }
+    .cj-main .cj-header {
+      width: 12rem; }
+    .cj-main .cj-content {
+      -ms-flex-align: start;
+          align-items: flex-start; }
+      .cj-main .cj-content .cj-search {
+        width: 30rem;
+        text-align: left;
+        margin: 0 0 1rem; }
+    .cj-main .cj-footer {
+      width: 5rem;
+      border-top: 0;
+      border-right: 1px solid; }
+      .cj-main .cj-footer .cj-btm-nav {
+        width: 5rem;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+        .cj-main .cj-footer .cj-btm-nav li {
+          margin: 1rem 0; } }
+
 .cj-content {
   -ms-flex: 1;
       flex: 1;
@@ -185,6 +219,40 @@ ul {
   background: linear-gradient(to bottom right, #0c0115, #9611fd);
   color: #fff; }
 
+.cj-dialog {
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .cj-dialog .modal-dialog {
+    width: 80%; }
+
+@media screen and (min-width: 768px) {
+  .cj-main {
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse; }
+    .cj-main .cj-header {
+      width: 12rem; }
+    .cj-main .cj-content {
+      -ms-flex-align: start;
+          align-items: flex-start; }
+      .cj-main .cj-content .cj-search {
+        width: 30rem;
+        text-align: left;
+        margin: 0 0 1rem; }
+    .cj-main .cj-footer {
+      width: 5rem;
+      border-top: 0;
+      border-right: 1px solid; }
+      .cj-main .cj-footer .cj-btm-nav {
+        width: 5rem;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+        .cj-main .cj-footer .cj-btm-nav li {
+          margin: 1rem 0; } }
+
 .cj-content {
   -ms-flex: 1;
       flex: 1;
@@ -270,3 +338,116 @@ ul {
 
 .test {
   color: red; }
+html, body, #root, .cj-main {
+  height: 100%;
+  width: 100%; }
+
+ul {
+  list-style: none; }
+
+.cj-main {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  background: linear-gradient(to bottom right, #0c0115, #9611fd);
+  color: #fff; }
+
+.cj-dialog {
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .cj-dialog .modal-dialog {
+    width: 80%; }
+
+@media screen and (min-width: 768px) {
+  .cj-main {
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse; }
+    .cj-main .cj-header {
+      width: 12rem; }
+    .cj-main .cj-content {
+      -ms-flex-align: start;
+          align-items: flex-start; }
+      .cj-main .cj-content .cj-search {
+        width: 30rem;
+        text-align: left;
+        margin: 0 0 1rem; }
+    .cj-main .cj-footer {
+      width: 5rem;
+      border-top: 0;
+      border-right: 1px solid; }
+      .cj-main .cj-footer .cj-btm-nav {
+        width: 5rem;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+        .cj-main .cj-footer .cj-btm-nav li {
+          margin: 1rem 0; } }
+
+.cj-content {
+  -ms-flex: 1;
+      flex: 1;
+  padding: 1rem;
+  position: relative; }
+
+@media screen and (max-width: 768px) {
+  .cj-content {
+    width: 100%; } }
+
+.cj-header {
+  padding: 1rem;
+  padding-bottom: 0; }
+
+.cj-footer {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 100%;
+  border-top: solid 1px #dedede; }
+
+::-webkit-scrollbar {
+  width: 0.5rem; }
+
+::-webkit-scrollbar-button {
+  background: #ddd; }
+
+::-webkit-scrollbar-track-piece {
+  background: #fff; }
+
+::-webkit-scrollbar-thumb {
+  background: #eee; }
+
+.cj-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center; }
+
+.cj-logo {
+  margin-bottom: 2rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  height: 7rem;
+  font-size: 7rem; }
+  .cj-logo .cj-icon {
+    width: 7rem;
+    height: 7rem; }
+
+.cj-btn {
+  width: 100%; }
+
+@keyframes login-animate {
+  0% {
+    transform: rotate(0); }
+  75% {
+    transform: rotate(360deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+.cj-rotate {
+  animation: login-animate 4s infinite; }
