@@ -7,3 +7,8 @@ world encyclopedia mobile page
 > 2.add login loader  
 > 3.add activeIndex of bottom menu  
 > 4.change icon of settings
+#### 2017-07-06  
+> 1.add characterList and characterDetail page  
+> 2.change value of actionType to fix the bug that redux data can be repeated  
+> 3.add history path to header  
+
