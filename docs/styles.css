@@ -3338,12 +3338,6 @@
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
 }
-@keyframes fadeInRight {
-  0% {
-    transform: rotateX(180deg); }
-  100% {
-    transform: rotateX(0); } }
-
 @keyframes cm-bounce {
   0% {
     opacity: 0;
@@ -3356,9 +3350,6 @@
   100% {
     transform: translateX(0); } }
 
-.cm-child-cont {
-  height: 100%; }
-
 .new {
   position: absolute;
   left: 0;
@@ -3367,7 +3358,6 @@
   height: 100%;
   z-index: 1000;
   animation: cm-bounce 1s;
-  background-color: #ff8111;
   animation-fill-mode: forwards; }
 html, body, #root {
   height: 100%;
@@ -4023,8 +4013,8 @@ button {
   -ms-flex-align: center;
       align-items: center;
   z-index: 10000;
-  background-color: black;
-  opacity: 0.7; }
+  background: url(/world-encyclopedia/images/loading-bg.jpg) no-repeat;
+  background-size: cover; }
   .cm-loader .cm-loading {
     font-size: 3rem;
     width: 10rem;
