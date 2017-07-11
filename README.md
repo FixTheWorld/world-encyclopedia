@@ -12,7 +12,7 @@ world encyclopedia mobile page
 > 2.change value of actionType to fix the bug that redux data can be repeated  
 > 3.add history path to header  
 #### 2017-07-11
-> 1.add page change effect  
+> 1.add page change effect  
 > 2.add loading effect  
 > 3.add favicon
 
