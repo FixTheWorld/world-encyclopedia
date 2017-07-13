@@ -24,5 +24,5 @@ world encyclopedia mobile page
 ```javascript 
 browserHistory.push({pathname:"/test",state:{item:object}})
 ```
-> 6.optimize page loading;if we get some data before,we can use it directly from this.props,but data can be not updated sometimes 
+> 6.optimize page loading;if we get some data before,we can use it directly from `this.props`,but data can be not updated sometimes 
 
