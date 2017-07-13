@@ -23,7 +23,7 @@ world encyclopedia mobile page
 > 5.use
 ```javascript 
 browserHistory.push({pathname:"/test",state:{item:object}})
-```
-to pass params，and this.props.location.state.item to receive it  ·
+```  
+    to pass params，and this.props.location.state.item to receive it  ·
 > 6.optimize page loading;if we get some data before,we can use it directly from this.props,but data can be not updated sometimes 
 
