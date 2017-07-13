@@ -18,6 +18,6 @@ world encyclopedia mobile page
 #### 2017-07-13
 > 1.add setting page  
 > 2.fixed the bug of repeated css  
-> 3.add cssnano to compress css  
+> 3.add cssnano to compress css  
 > 4.write a function to check whether a property of object is exist  
 
