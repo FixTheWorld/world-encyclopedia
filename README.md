@@ -20,4 +20,6 @@ world encyclopedia mobile page
 > 2.fixed the bug of repeated css  
 > 3.add cssnano to compress css  
 > 4.write a function to check whether a property of object is exist  
+> 5.use browserHistory.push({pathname:"/test",state:{item:object}}) to pass params，and this.props.location.state.item to receive it  
+> 6.optimize page loading;if we get some data before,we can use it directly from this.props,but data can be not updated sometimes 
 
