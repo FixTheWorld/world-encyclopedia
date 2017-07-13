@@ -14,5 +14,9 @@ world encyclopedia mobile page
 #### 2017-07-11
 > 1.add page change effect  
 > 2.add loading effect  
-> 3.add favicon
+> 3.add favicon  
+#### 2017-07-13
+> 1.add setting page  
+> 2.fixed the bug of repeated css  
+> 3.add cssnano to compress css  
 
