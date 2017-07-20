@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, #root {
   height: 100%;
   width: 100%; }
@@ -48,7 +49,11 @@ button {
   -ms-flex: 1;
       flex: 1;
   padding: 1rem;
-  position: relative; }
+  position: relative;
+  overflow: auto !important;
+  /* winphone8和android4+ */
+  -webkit-overflow-scrolling: touch !important;
+  /* ios5+ */ }
 
 .cj-header {
   padding: 1rem;
@@ -126,6 +131,9 @@ button {
   .cj-bread-crumb {
     -ms-flex-direction: row !important;
         flex-direction: row !important; } }
+
+#layout {
+  overflow: hidden; }
 
 @keyframes cm-bounce {
   0% {
@@ -533,7 +541,7 @@ button {
       border-top: 0;
       border-radius: 0 0 3px 3px; }
   .cj-setting-list .cj-setting-list-cont > li:nth-child(even) {
-    background-color: #00bcd4;
+    background-color: #4caf50;
     border-radius: 3px 0 3px 3px;
     margin-bottom: 5px; }
     .cj-setting-list .cj-setting-list-cont > li:nth-child(even) .cj-btm {
