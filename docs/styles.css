@@ -50,6 +50,7 @@ button {
       flex: 1;
   padding: 1rem;
   position: relative;
+  z-index: 10;
   overflow: auto !important;
   /* winphone8和android4+ */
   -webkit-overflow-scrolling: touch !important;
@@ -308,24 +309,117 @@ button {
     font-size: 3rem;
     color: #ff8111;
     animation: rotate-reverse 1s linear infinite; }
-.cj-war .cj-bg {
-  position: absolute;
-  top: 0.5rem;
-  left: 0;
-  width: 10rem;
-  height: 20rem;
-  transform: rotate(180deg); }
-
-.cj-war .cj-bg2 {
-  background-image: url(/world-encyclopedia/images/bg2.png);
-  background-position: 100% 270%;
-  background-size: 100% 95%;
-  background-repeat: no-repeat;
-  position: absolute;
-  bottom: 0.5rem;
-  right: 1rem;
-  width: 10rem;
-  height: 95%; }
+.cj-war {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 1rem; }
+  .cj-war .cj-battle-top {
+    display: -ms-flexbox;
+    display: flex;
+    height: 30px;
+    width: 100%;
+    max-width: 500px; }
+    .cj-war .cj-battle-top .cj-vs {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      width: 30px; }
+    .cj-war .cj-battle-top .cj-battle-life {
+      -ms-flex: 1;
+          flex: 1;
+      border: solid 1px; }
+  .cj-war .cj-battle-middle {
+    width: 100%;
+    height: 30vh;
+    max-height: 300px;
+    padding-top: 1rem; }
+    .cj-war .cj-battle-middle .cj-battle-icon {
+      width: 5rem;
+      height: 5rem; }
+  .cj-war .cj-battle-bottom {
+    width: 90%;
+    max-height: 300px;
+    height: 100px;
+    border: solid 1px;
+    transform: skew(-30deg);
+    border-spacing: 0.3rem;
+    border-collapse: separate; }
+    .cj-war .cj-battle-bottom tr, .cj-war .cj-battle-bottom td {
+      border: solid 1px;
+      padding: 0.3rem; }
+    .cj-war .cj-battle-bottom td {
+      width: 23%;
+      vertical-align: middle; }
+    .cj-war .cj-battle-bottom td:nth-child(2), .cj-war .cj-battle-bottom td:nth-child(4) {
+      text-align: right; }
+    .cj-war .cj-battle-bottom tr:last-of-type {
+      height: 20px;
+      text-align: center; }
+      .cj-war .cj-battle-bottom tr:last-of-type td:nth-child(2), .cj-war .cj-battle-bottom tr:last-of-type td:nth-child(4) {
+        text-align: center; }
+  .cj-war .cj-battle-menu {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    max-width: 500px; }
+    .cj-war .cj-battle-menu .cj-battle-icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      margin-bottom: 0.2rem;
+      margin-right: 1rem; }
+    .cj-war .cj-battle-menu > li {
+      -ms-flex: 1;
+          flex: 1;
+      margin-right: 0.3rem;
+      padding: 0.2rem;
+      border: solid 1px;
+      border-radius: 2px; }
+      .cj-war .cj-battle-menu > li > h5 {
+        margin: 0.3rem 0; }
+      .cj-war .cj-battle-menu > li > h6 {
+        margin: 0;
+        text-align: center; }
+    .cj-war .cj-battle-menu > li:last-child {
+      margin-right: 0; }
+  .cj-war .cj-magic-list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    width: 100%;
+    max-width: 500px; }
+    .cj-war .cj-magic-list > li {
+      display: -ms-flexbox;
+      display: flex;
+      border: solid 1px #00bcd4;
+      font-size: 1.2rem;
+      margin-bottom: 0.3rem; }
+      .cj-war .cj-magic-list > li > div {
+        width: 20%;
+        padding: 0.3rem;
+        border-right: solid 1px #00bcd4; }
+      .cj-war .cj-magic-list > li > div:last-child {
+        border: 0; }
+      .cj-war .cj-magic-list > li .cj-magic-name {
+        width: 40%; }
+      .cj-war .cj-magic-list > li .cj-magic-icon {
+        font-size: 1.2rem;
+        margin-right: 0.3rem; }
 .cj-login.cj-content {
   display: -ms-flexbox;
   display: flex;
@@ -552,3 +646,11 @@ button {
       text-align: right; }
   .cj-setting-list .cj-setting-list-cont > li:last-child {
     margin-bottom: 0; }
+.cj-demo {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .cj-demo textarea {
+    width: 100%;
+    height: 200px; }
