@@ -312,17 +312,22 @@ button {
 .cj-war {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
-  padding: 1rem; }
+  padding: 1rem;
+  overflow-x: hidden !important; }
+  .cj-war .cj-name {
+    width: 100%;
+    max-width: 500px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
   .cj-war .cj-battle-top {
     display: -ms-flexbox;
     display: flex;
-    height: 30px;
     width: 100%;
     max-width: 500px; }
     .cj-war .cj-battle-top .cj-vs {
@@ -332,40 +337,132 @@ button {
           align-items: center;
       -ms-flex-pack: center;
           justify-content: center;
-      width: 30px; }
+      width: 20px;
+      font-size: 18px;
+      color: #00bcd4; }
     .cj-war .cj-battle-top .cj-battle-life {
       -ms-flex: 1;
           flex: 1;
-      border: solid 1px; }
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      margin-bottom: 0;
+      line-height: 1;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+      .cj-war .cj-battle-top .cj-battle-life > li {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+        -ms-flex-preferred-size: 49%;
+            flex-basis: 49%;
+        padding: 0;
+        margin-bottom: 3px;
+        font-size: 1.2rem; }
+        .cj-war .cj-battle-top .cj-battle-life > li .cj-life-cont {
+          border: solid 1px; }
+        .cj-war .cj-battle-top .cj-battle-life > li .cj-life {
+          height: 15px;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-align: center;
+              align-items: center;
+          width: 50%;
+          background-color: #4caf50; }
+        .cj-war .cj-battle-top .cj-battle-life > li .cj-magic {
+          width: 70%;
+          height: 10px;
+          border: solid 1px #e91e63;
+          font-size: 1rem;
+          background-color: #e91e63; }
+        .cj-war .cj-battle-top .cj-battle-life > li .cj-life-bottom {
+          height: 15px;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+          -ms-flex-align: center;
+              align-items: center; }
+          .cj-war .cj-battle-top .cj-battle-life > li .cj-life-bottom .cj-cast {
+            font-size: 1.2rem;
+            margin-top: 1px; }
+          .cj-war .cj-battle-top .cj-battle-life > li .cj-life-bottom .cj-cast-time {
+            width: 100%;
+            height: 5px;
+            margin-top: 3px;
+            margin-left: 2px;
+            background-color: #eea914; }
+      .cj-war .cj-battle-top .cj-battle-life > li:nth-child(3), .cj-war .cj-battle-top .cj-battle-life > li:nth-child(4) {
+        margin-bottom: 0; }
   .cj-war .cj-battle-middle {
     width: 100%;
-    height: 30vh;
-    max-height: 300px;
-    padding-top: 1rem; }
+    max-width: 500px;
+    height: 50px;
+    max-height: 300px; }
     .cj-war .cj-battle-middle .cj-battle-icon {
-      width: 5rem;
-      height: 5rem; }
+      width: 40px;
+      height: 40px;
+      margin-right: 1rem; }
+  .cj-war .cj-battle-character {
+    transform: scaleX(-1) skew(-30deg);
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    width: 30px;
+    height: 35px;
+    animation: shake 1s infinite; }
+
+@keyframes shake {
+  from {
+    transform: scaleX(-1) skew(-30deg) translate(-10px); }
+  to {
+    transform: scaleX(-1) skew(-30deg) translate(10px); } }
+
+@keyframes shake2 {
+  from {
+    transform: scaleX(-1) skew(-30deg) translate(10px); }
+  to {
+    transform: scaleX(-1) skew(-30deg) translate(-10px); } }
   .cj-war .cj-battle-bottom {
-    width: 90%;
+    width: 85%;
+    max-width: 500px;
     max-height: 300px;
     height: 100px;
     border: solid 1px;
     transform: skew(-30deg);
     border-spacing: 0.3rem;
-    border-collapse: separate; }
+    border-collapse: separate;
+    margin-top: 35px;
+    margin-bottom: 5px; }
     .cj-war .cj-battle-bottom tr, .cj-war .cj-battle-bottom td {
       border: solid 1px;
       padding: 0.3rem; }
     .cj-war .cj-battle-bottom td {
-      width: 23%;
-      vertical-align: middle; }
-    .cj-war .cj-battle-bottom td:nth-child(2), .cj-war .cj-battle-bottom td:nth-child(4) {
-      text-align: right; }
+      width: 25%;
+      height: 35px;
+      vertical-align: middle;
+      position: relative; }
+    .cj-war .cj-battle-bottom td:nth-child(1) .cj-battle-character {
+      left: -7px; }
+    .cj-war .cj-battle-bottom td:nth-child(4) .cj-battle-character {
+      right: 15px; }
+    .cj-war .cj-battle-bottom td:nth-child(3) .cj-battle-character, .cj-war .cj-battle-bottom td:nth-child(4) .cj-battle-character {
+      width: 50px;
+      height: 55px;
+      animation: shake2 1s infinite; }
     .cj-war .cj-battle-bottom tr:last-of-type {
       height: 20px;
-      text-align: center; }
-      .cj-war .cj-battle-bottom tr:last-of-type td:nth-child(2), .cj-war .cj-battle-bottom tr:last-of-type td:nth-child(4) {
-        text-align: center; }
+      text-align: center;
+      padding: 0; }
+      .cj-war .cj-battle-bottom tr:last-of-type td {
+        height: 10px;
+        padding: 0; }
+    .cj-war .cj-battle-bottom .cj-menu-active {
+      background-color: #00bcd4; }
   .cj-war .cj-battle-menu {
     display: -ms-flexbox;
     display: flex;
@@ -375,6 +472,9 @@ button {
         flex-wrap: wrap;
     width: 100%;
     max-width: 500px; }
+    .cj-war .cj-battle-menu .cj-menu-active {
+      border-color: #E91E63;
+      border-width: 1px; }
     .cj-war .cj-battle-menu .cj-battle-icon {
       width: 2.5rem;
       height: 2.5rem;
@@ -395,8 +495,7 @@ button {
     .cj-war .cj-battle-menu > li:last-child {
       margin-right: 0; }
   .cj-war .cj-magic-list {
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -ms-flex-direction: column;
         flex-direction: column;
     -ms-flex-pack: justify;
