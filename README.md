@@ -25,4 +25,11 @@ world encyclopedia mobile page
 browserHistory.push({pathname:"/test",state:{item:object}})
 ```
 > 6.optimize page loading;if we get some data before,we can use it directly from <font color=blue>`this.props`</font>,but data can be not updated sometimes 
+#### 2017-07-24
+> 1.add war battle page  
+> 2.write code of battle  
+
+#### 2017-07-26
+> 1.add mp3  
+> 2.to download mp3,use manifest appcache
 
