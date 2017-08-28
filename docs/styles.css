@@ -3,9 +3,6 @@ html, body, #root {
   height: 100%;
   width: 100%; }
 
-#root {
-  background-color: #ddd; }
-
 ul {
   list-style: none;
   padding-left: 0; }
@@ -93,9 +90,9 @@ button {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  background: linear-gradient(to bottom right, #0c0115, #9611fd);
   color: #fff;
-  padding: 0; }
+  padding: 0;
+  background-color: #736775; }
 
 .cj-dialog {
   display: -ms-flexbox !important;
@@ -152,7 +149,8 @@ button {
       font-size: 2.3rem; }
 
 ::-webkit-scrollbar {
-  width: 0.5rem; }
+  width: 0.5rem;
+  height: 0.5rem; }
 
 ::-webkit-scrollbar-button {
   background: #ddd; }
@@ -161,7 +159,7 @@ button {
   background: #fff; }
 
 ::-webkit-scrollbar-thumb {
-  background: #eee; }
+  background: #12b2ff; }
 
 @media screen and (min-width: 768px) {
   .cj-main {
@@ -224,58 +222,101 @@ button {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center; }
+  overflow: hidden !important; }
 
 .cj-home .cj-info-cont {
   width: 100%;
   margin-bottom: 7px;
-  background-color: antiquewhite;
   padding: 3px;
-  border-radius: 2px; }
-
-.cj-home .cj-info {
+  border-radius: 2px;
   display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-bottom: 0;
-  color: #fff;
-  line-height: 1; }
-  .cj-home .cj-info li {
-    -ms-flex-preferred-size: calc(100% / 3);
-        flex-basis: calc(100% / 3);
+  display: flex; }
+  .cj-home .cj-info-cont .cj-info-header {
     display: -ms-flexbox;
     display: flex;
-    padding: 3px; }
-    .cj-home .cj-info li .cj-info-left {
-      padding: 3px;
-      -ms-flex: 0;
-          flex: 0;
-      background-color: grey;
-      border-top-left-radius: 2px;
-      border-bottom-left-radius: 2px; }
-    .cj-home .cj-info li .cj-info-right {
-      -ms-flex: 1;
-          flex: 1;
-      padding: 3px;
-      min-width: 50px;
-      text-align: center;
-      background-color: #ff8fae;
-      border-top-right-radius: 2px;
-      border-bottom-right-radius: 2px; }
-  .cj-home .cj-info .cj-info-spec {
-    -ms-flex-preferred-size: calc(200% /3);
-        flex-basis: calc(200% /3); }
-  .cj-home .cj-info label {
-    font-weight: normal;
-    margin: 0 0.3rem; }
+    -ms-flex-align: center;
+        align-items: center; }
+    .cj-home .cj-info-cont .cj-info-header .cj-info-left {
+      font-size: 45px; }
+    .cj-home .cj-info-cont .cj-info-header .cj-info-right {
+      line-height: 1.7;
+      margin-left: 5px; }
+  .cj-home .cj-info-cont .cj-info-icon {
+    margin-right: 5px; }
+  .cj-home .cj-info-cont .cj-info {
+    width: 50%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 0;
+    color: #fff;
+    line-height: 1; }
+
+.cj-home .cj-info-other {
+  width: 35%;
+  margin-bottom: 0; }
+  .cj-home .cj-info-other li {
+    border-bottom: solid 1px white; }
+
+.cj-home .cj-main-content {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  position: relative; }
+  .cj-home .cj-main-content .cj-content-bg {
+    width: 600px;
+    height: 320px;
+    background: url(/world-encyclopedia/images/bg-fire.jpg) no-repeat; }
+    .cj-home .cj-main-content .cj-content-bg li {
+      float: left;
+      position: relative; }
+      .cj-home .cj-main-content .cj-content-bg li .cj-menu-text {
+        font-size: 14px;
+        color: white; }
+      .cj-home .cj-main-content .cj-content-bg li .cj-menu-icon {
+        font-size: 18px; }
+      .cj-home .cj-main-content .cj-content-bg li .cj-menu-icon-cont {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center;
+        width: 30px;
+        height: 30px;
+        border: solid 2px #12b2ff;
+        border-radius: 50%;
+        overflow: hidden;
+        color: #e9157d; }
+    .cj-home .cj-main-content .cj-content-bg .cj-menu-characters {
+      top: 80px;
+      left: 120px; }
+    .cj-home .cj-main-content .cj-content-bg .cj-menu-items {
+      top: 80px;
+      left: 210px; }
+      .cj-home .cj-main-content .cj-content-bg .cj-menu-items .cj-menu-icon {
+        right: -1px; }
+    .cj-home .cj-main-content .cj-content-bg .cj-menu-magics {
+      top: 20px;
+      left: -27px; }
+    .cj-home .cj-main-content .cj-content-bg .cj-menu-missions {
+      top: 30px;
+      left: 250px; }
+    .cj-home .cj-main-content .cj-content-bg .cj-menu-settings {
+      float: right;
+      top: 50px;
+      right: 40px; }
+    .cj-home .cj-main-content .cj-content-bg .cj-menu-others {
+      float: right;
+      top: 110px;
+      right: 40px; }
+    .cj-home .cj-main-content .cj-content-bg .cj-menu-training {
+      top: 200px;
+      left: 230px; }
 
 @media screen and (min-width: 768px) {
-  .cj-home .cj-info-cont {
-    width: auto; }
   .cj-home .cj-info .cj-info-spec,
   .cj-home .cj-info li {
     -ms-flex-preferred-size: auto;
