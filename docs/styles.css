@@ -249,8 +249,6 @@ button {
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     margin-bottom: 0;
     color: #fff;
     line-height: 1; }
@@ -398,6 +396,14 @@ button {
 .cj-home .cj-nav-text {
   font-size: 1.4rem;
   line-height: 1; }
+
+.cj-home .cj-btm-arrow {
+  width: 100%;
+  text-align: center; }
+  .cj-home .cj-btm-arrow .cj-arrow-left, .cj-home .cj-btm-arrow .cj-arrow-right {
+    margin: 5px; }
+  .cj-home .cj-btm-arrow .cj-arrow-disabled {
+    color: grey; }
 .cm-active {
   color: #00bcd4; }
 .cm-loader {
