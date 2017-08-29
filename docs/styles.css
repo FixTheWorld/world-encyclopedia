@@ -252,6 +252,8 @@ button {
     margin-bottom: 0;
     color: #fff;
     line-height: 1; }
+  .cj-home .cj-info-cont .cj-info-footer {
+    margin-top: 3px; }
 
 .cj-home .cj-info-other {
   width: 35%;
